@@ -7,9 +7,11 @@
 <title>Lee Construction Services</title>
 
 <meta name="description" content="Lee Construction Services - Building, renovations, paving, painting, tiling, ceilings and property maintenance.">
+
 <meta name="theme-color" content="#0b1f33">
 
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -26,6 +28,10 @@ body{
 
 a{
   text-decoration:none;
+}
+
+button{
+  font-family:inherit;
 }
 
 header{
@@ -87,8 +93,12 @@ header{
   display:flex;
   align-items:center;
   color:#fff;
+
   background:
-  linear-gradient(rgba(5,20,35,.82),rgba(5,20,35,.82)),
+  linear-gradient(
+    rgba(5,20,35,.82),
+    rgba(5,20,35,.82)
+  ),
   url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
   center/cover;
 }
@@ -137,7 +147,7 @@ header{
   font-weight:800;
   transition:.25s;
   cursor:pointer;
-  border:none;
+  border:0;
 }
 
 .btn-primary{
@@ -275,7 +285,7 @@ section{
   margin-right:10px;
 }
 
-/* TYPES */
+/* PROPERTY TYPES */
 
 .types{
   background:#0b1f33;
@@ -525,7 +535,10 @@ textarea{
 
 .cta{
   background:
-  linear-gradient(rgba(8,28,45,.94),rgba(8,28,45,.94)),
+  linear-gradient(
+    rgba(8,28,45,.94),
+    rgba(8,28,45,.94)
+  ),
   url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80")
   center/cover;
   color:#fff;
@@ -596,19 +609,20 @@ footer p{
   position:fixed;
   right:20px;
   bottom:20px;
-  width:62px;
-  height:62px;
+  width:64px;
+  height:64px;
   border-radius:50%;
   background:#25D366;
   color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:31px;
+  font-size:32px;
   z-index:99999;
   box-shadow:0 6px 25px rgba(0,0,0,.28);
   cursor:pointer;
   transition:.2s;
+  border:0;
 }
 
 .whatsapp:hover{
@@ -665,6 +679,7 @@ footer p{
   .projects{
     grid-template-columns:1fr 1fr;
   }
+
 }
 
 @media(max-width:600px){
@@ -714,13 +729,18 @@ footer p{
   .cta h2{
     font-size:30px;
   }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
 <div class="navbar">
 
   <div class="logo">
@@ -731,6 +751,7 @@ footer p{
   <div class="menu" onclick="toggleMenu()">☰</div>
 
   <nav class="nav-links" id="navLinks">
+
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -738,9 +759,11 @@ footer p{
     <a href="#prices">Prices</a>
     <a href="#booking">Get Quote</a>
     <a href="#contact">Contact</a>
+
   </nav>
 
 </div>
+
 </header>
 
 <!-- HERO -->
@@ -749,9 +772,13 @@ footer p{
 
 <div class="hero-content">
 
-  <span class="badge">CONSTRUCTION & PROPERTY SERVICES</span>
+  <span class="badge">
+    CONSTRUCTION & PROPERTY SERVICES
+  </span>
 
-  <h1>Build Better. Renovate With Confidence.</h1>
+  <h1>
+    Build Better. Renovate With Confidence.
+  </h1>
 
   <p>
     Lee Construction Services provides building, renovation,
@@ -769,12 +796,15 @@ footer p{
       type="button"
       class="btn btn-white"
       onclick="openWhatsApp()">
+
       💬 WhatsApp Us
+
     </button>
 
   </div>
 
 </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -784,77 +814,166 @@ footer p{
 <div class="container">
 
 <div class="section-title">
+
   <h2>Our Construction Services</h2>
-  <p>Practical construction and property improvement services.</p>
+
+  <p>
+    Practical construction and property improvement services.
+  </p>
+
 </div>
 
 <div class="services-grid">
 
 <div class="card">
+
   <div class="icon">🏗️</div>
+
   <h3>General Building</h3>
-  <p>General building work and property improvement projects.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    General building work and property improvement projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🏠</div>
+
   <h3>Home Renovations</h3>
-  <p>Renovation projects for rooms, homes and selected property areas.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    Renovation projects for rooms, homes and selected property areas.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🧱</div>
+
   <h3>Brickwork & Blockwork</h3>
-  <p>Brickwork, blockwork and selected construction projects.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    Brickwork, blockwork and selected construction projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🎨</div>
+
   <h3>Painting</h3>
-  <p>Interior and exterior painting for residential and selected commercial properties.</p>
-  <div class="price">From R500</div>
+
+  <p>
+    Interior and exterior painting for residential and selected
+    commercial properties.
+  </p>
+
+  <div class="price">
+    From R500
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🧱</div>
+
   <h3>Plastering</h3>
-  <p>Wall plastering and surface preparation enquiries.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    Wall plastering and surface preparation enquiries.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🔲</div>
+
   <h3>Tiling</h3>
-  <p>Floor, wall, kitchen and bathroom tiling services.</p>
-  <div class="price">From R250/m²</div>
+
+  <p>
+    Floor, wall, kitchen and bathroom tiling services.
+  </p>
+
+  <div class="price">
+    From R250/m²
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">⬜</div>
+
   <h3>Ceilings</h3>
-  <p>Ceiling installation, repairs and selected ceiling projects.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    Ceiling installation, repairs and selected ceiling projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🪨</div>
+
   <h3>Paving</h3>
-  <p>Paving, pathways and selected outdoor construction projects.</p>
-  <div class="price">From R250/m²</div>
+
+  <p>
+    Paving, pathways and selected outdoor construction projects.
+  </p>
+
+  <div class="price">
+    From R250/m²
+  </div>
+
 </div>
 
 <div class="card">
+
   <div class="icon">🔨</div>
+
   <h3>Property Maintenance</h3>
-  <p>General repairs, maintenance and improvement enquiries.</p>
-  <div class="price">Quote Required</div>
+
+  <p>
+    General repairs, maintenance and improvement enquiries.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- ABOUT -->
@@ -865,36 +984,41 @@ footer p{
 
 <div>
 
-<h2>Construction That Starts With A Clear Quote</h2>
+  <h2>
+    Construction That Starts With A Clear Quote
+  </h2>
 
-<p>
-Every construction project is different. The size of the property,
-materials, access and scope of work can all affect the final price.
-</p>
+  <p>
+    Every construction project is different. The size of the property,
+    materials, access and scope of work can all affect the final price.
+  </p>
 
-<p>
-Tell us what you want to build, repair or renovate and provide
-as much information as possible so the project can be discussed
-and quoted appropriately.
-</p>
+  <p>
+    Tell us what you want to build, repair or renovate and provide
+    as much information as possible so the project can be discussed
+    and quoted appropriately.
+  </p>
 
-<ul class="about-list">
-<li>Residential construction</li>
-<li>Renovation projects</li>
-<li>Property maintenance</li>
-<li>Interior & exterior improvements</li>
-<li>WhatsApp quotation requests</li>
-<li>Project-focused service</li>
-</ul>
+  <ul class="about-list">
+
+    <li>Residential construction</li>
+    <li>Renovation projects</li>
+    <li>Property maintenance</li>
+    <li>Interior & exterior improvements</li>
+    <li>WhatsApp quotation requests</li>
+    <li>Project-focused service</li>
+
+  </ul>
 
 </div>
 
 <img
-class="about-image"
-src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
-alt="Construction workers on a building project">
+  class="about-image"
+  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+  alt="Construction workers on a building project">
 
 </div>
+
 </section>
 
 <!-- PROPERTY TYPES -->
@@ -904,38 +1028,69 @@ alt="Construction workers on a building project">
 <div class="container">
 
 <div class="section-title">
-<h2>Projects We Can Discuss</h2>
-<p>Construction and improvement enquiries for different property types.</p>
+
+  <h2>Projects We Can Discuss</h2>
+
+  <p>
+    Construction and improvement enquiries for different property types.
+  </p>
+
 </div>
 
 <div class="type-grid">
 
 <div class="type-box">
-<div class="icon">🏠</div>
-<h3>Homes</h3>
-<p>Building, renovation and maintenance enquiries.</p>
+
+  <div class="icon">🏠</div>
+
+  <h3>Homes</h3>
+
+  <p>
+    Building, renovation and maintenance enquiries.
+  </p>
+
 </div>
 
 <div class="type-box">
-<div class="icon">🏢</div>
-<h3>Offices</h3>
-<p>Selected commercial property improvements.</p>
+
+  <div class="icon">🏢</div>
+
+  <h3>Offices</h3>
+
+  <p>
+    Selected commercial property improvements.
+  </p>
+
 </div>
 
 <div class="type-box">
-<div class="icon">🏪</div>
-<h3>Businesses</h3>
-<p>Property repairs, upgrades and renovation projects.</p>
+
+  <div class="icon">🏪</div>
+
+  <h3>Businesses</h3>
+
+  <p>
+    Property repairs, upgrades and renovation projects.
+  </p>
+
 </div>
 
 <div class="type-box">
-<div class="icon">🏗️</div>
-<h3>Construction Sites</h3>
-<p>Discuss your project requirements and scope of work.</p>
+
+  <div class="icon">🏗️</div>
+
+  <h3>Construction Sites</h3>
+
+  <p>
+    Discuss your project requirements and scope of work.
+  </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- PROJECTS -->
@@ -945,44 +1100,75 @@ alt="Construction workers on a building project">
 <div class="container">
 
 <div class="section-title">
-<h2>Construction Projects</h2>
-<p>Examples of the type of work customers can enquire about.</p>
+
+  <h2>Construction Projects</h2>
+
+  <p>
+    Examples of the type of work customers can enquire about.
+  </p>
+
 </div>
 
 <div class="projects">
 
 <div class="project">
-<img
-src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
-alt="Building construction">
-<div class="project-content">
-<h3>Building Projects</h3>
-<p>General building and property improvement enquiries.</p>
-</div>
+
+  <img
+    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
+    alt="Building construction">
+
+  <div class="project-content">
+
+    <h3>Building Projects</h3>
+
+    <p>
+      General building and property improvement enquiries.
+    </p>
+
+  </div>
+
 </div>
 
 <div class="project">
-<img
-src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80"
-alt="House renovation">
-<div class="project-content">
-<h3>Renovations</h3>
-<p>Upgrade selected rooms and areas of your property.</p>
-</div>
+
+  <img
+    src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80"
+    alt="House renovation">
+
+  <div class="project-content">
+
+    <h3>Renovations</h3>
+
+    <p>
+      Upgrade selected rooms and areas of your property.
+    </p>
+
+  </div>
+
 </div>
 
 <div class="project">
-<img
-src="https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=80"
-alt="Construction materials">
-<div class="project-content">
-<h3>Property Improvements</h3>
-<p>Discuss repairs, finishes and other improvement projects.</p>
-</div>
+
+  <img
+    src="https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=80"
+    alt="Construction materials">
+
+  <div class="project-content">
+
+    <h3>Property Improvements</h3>
+
+    <p>
+      Discuss repairs, finishes and other improvement projects.
+    </p>
+
+  </div>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- PROCESS -->
@@ -992,38 +1178,69 @@ alt="Construction materials">
 <div class="container">
 
 <div class="section-title">
-<h2>How It Works</h2>
-<p>A simple way to start your construction project.</p>
+
+  <h2>How It Works</h2>
+
+  <p>
+    A simple way to start your construction project.
+  </p>
+
 </div>
 
 <div class="process-grid">
 
 <div class="step">
-<div class="step-number">1</div>
-<h3>Tell Us</h3>
-<p>Tell us what you want to build, repair or renovate.</p>
+
+  <div class="step-number">1</div>
+
+  <h3>Tell Us</h3>
+
+  <p>
+    Tell us what you want to build, repair or renovate.
+  </p>
+
 </div>
 
 <div class="step">
-<div class="step-number">2</div>
-<h3>Send Details</h3>
-<p>Provide photos, measurements, location and project details.</p>
+
+  <div class="step-number">2</div>
+
+  <h3>Send Details</h3>
+
+  <p>
+    Provide photos, measurements, location and project details.
+  </p>
+
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
-<h3>Get A Quote</h3>
-<p>Discuss the work and receive a quotation based on the project.</p>
+
+  <div class="step-number">3</div>
+
+  <h3>Get A Quote</h3>
+
+  <p>
+    Discuss the work and receive a quotation based on the project.
+  </p>
+
 </div>
 
 <div class="step">
-<div class="step-number">4</div>
-<h3>Start The Project</h3>
-<p>Arrange the work and project schedule.</p>
+
+  <div class="step-number">4</div>
+
+  <h3>Start The Project</h3>
+
+  <p>
+    Arrange the work and project schedule.
+  </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- PRICES -->
@@ -1033,32 +1250,63 @@ alt="Construction materials">
 <div class="container">
 
 <div class="section-title">
-<h2>Starting Price Guide</h2>
-<p>Final pricing depends on materials, measurements, access and project scope.</p>
+
+  <h2>Starting Price Guide</h2>
+
+  <p>
+    Final pricing depends on materials, measurements, access and project scope.
+  </p>
+
 </div>
 
 <div class="price-grid">
 
 <div class="price-card">
-<h3>Painting</h3>
-<div class="amount">From R500</div>
-<p>Final price depends on the area, preparation and paint requirements.</p>
+
+  <h3>Painting</h3>
+
+  <div class="amount">
+    From R500
+  </div>
+
+  <p>
+    Final price depends on the area, preparation and paint requirements.
+  </p>
+
 </div>
 
 <div class="price-card">
-<h3>Tiling</h3>
-<div class="amount">From R250/m²</div>
-<p>Final quotation depends on the tile type, preparation and project.</p>
+
+  <h3>Tiling</h3>
+
+  <div class="amount">
+    From R250/m²
+  </div>
+
+  <p>
+    Final quotation depends on the tile type, preparation and project.
+  </p>
+
 </div>
 
 <div class="price-card">
-<h3>Construction</h3>
-<div class="amount">Quote Required</div>
-<p>Construction projects are quoted according to the complete scope.</p>
+
+  <h3>Construction</h3>
+
+  <div class="amount">
+    Quote Required
+  </div>
+
+  <p>
+    Construction projects are quoted according to the complete scope.
+  </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- BOOKING -->
@@ -1068,8 +1316,13 @@ alt="Construction materials">
 <div class="container">
 
 <div class="section-title">
-<h2>Request A Construction Quote</h2>
-<p>Complete the form and send your project details directly to WhatsApp.</p>
+
+  <h2>Request A Construction Quote</h2>
+
+  <p>
+    Complete the form and send your project details directly to WhatsApp.
+  </p>
+
 </div>
 
 <div class="form-box">
@@ -1079,13 +1332,27 @@ alt="Construction materials">
 <div class="form-grid">
 
 <div class="form-group">
+
 <label>Your Name</label>
-<input type="text" id="name" placeholder="Enter your name" required>
+
+<input
+  type="text"
+  id="name"
+  placeholder="Enter your name"
+  required>
+
 </div>
 
 <div class="form-group">
+
 <label>Phone Number</label>
-<input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+<input
+  type="tel"
+  id="phone"
+  placeholder="Enter your phone number"
+  required>
+
 </div>
 
 <div class="form-group">
@@ -1093,7 +1360,9 @@ alt="Construction materials">
 <label>Service</label>
 
 <select id="service" required>
+
 <option value="">Select service</option>
+
 <option>General Building</option>
 <option>Home Renovation</option>
 <option>Brickwork & Blockwork</option>
@@ -1104,6 +1373,7 @@ alt="Construction materials">
 <option>Paving</option>
 <option>Property Maintenance</option>
 <option>Other</option>
+
 </select>
 
 </div>
@@ -1113,7 +1383,9 @@ alt="Construction materials">
 <label>Property Type</label>
 
 <select id="property" required>
+
 <option value="">Select property</option>
+
 <option>House</option>
 <option>Apartment</option>
 <option>Office</option>
@@ -1121,45 +1393,70 @@ alt="Construction materials">
 <option>Estate</option>
 <option>Construction Site</option>
 <option>Other</option>
+
 </select>
 
 </div>
 
 <div class="form-group">
+
 <label>Preferred Date</label>
-<input type="date" id="date">
+
+<input
+  type="date"
+  id="date">
+
 </div>
 
 <div class="form-group">
+
 <label>Preferred Time</label>
-<input type="time" id="time">
+
+<input
+  type="time"
+  id="time">
+
 </div>
 
 <div class="form-group full">
+
 <label>Property Address / Area</label>
-<input type="text" id="address" placeholder="Enter your property address or area" required>
+
+<input
+  type="text"
+  id="address"
+  placeholder="Enter your property address or area"
+  required>
+
 </div>
 
 <div class="form-group full">
+
 <label>Project Details</label>
+
 <textarea
-id="details"
-placeholder="Tell us what you want built, repaired or renovated. Include approximate measurements if you know them."
-required></textarea>
+  id="details"
+  placeholder="Tell us what you want built, repaired or renovated. Include approximate measurements if you know them."
+  required></textarea>
+
 </div>
 
 </div>
 
 <button
-type="submit"
-class="btn btn-primary submit-btn">
-💬 Send Quote Request On WhatsApp
+  type="submit"
+  class="btn btn-primary submit-btn">
+
+  💬 Send Quote Request On WhatsApp
+
 </button>
 
 </form>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- PAYMENT -->
@@ -1170,7 +1467,9 @@ class="btn btn-primary submit-btn">
 
 <div class="payment-box">
 
-<h2>💳 Pay With Yoco</h2>
+<h2>
+  💳 Pay With Yoco
+</h2>
 
 <p>
 Once your quotation and payment arrangement have been agreed,
@@ -1178,15 +1477,19 @@ you can use the Yoco payment option below.
 </p>
 
 <a
-href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
-target="_blank"
-rel="noopener noreferrer"
-class="btn btn-primary">
-Pay With Yoco
+  href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="btn btn-primary">
+
+  Pay With Yoco
+
 </a>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- CTA -->
@@ -1195,7 +1498,9 @@ Pay With Yoco
 
 <div class="container">
 
-<h2>Ready To Start Your Project?</h2>
+<h2>
+  Ready To Start Your Project?
+</h2>
 
 <p>
 Whether it is a renovation, paving project, painting job or general
@@ -1204,13 +1509,16 @@ your requirements.
 </p>
 
 <button
-type="button"
-class="btn btn-primary"
-onclick="openWhatsApp()">
-💬 WhatsApp Lee Construction
+  type="button"
+  class="btn btn-primary"
+  onclick="openWhatsApp()">
+
+  💬 WhatsApp Lee Construction
+
 </button>
 
 </div>
+
 </section>
 
 <!-- CONTACT -->
@@ -1221,9 +1529,13 @@ onclick="openWhatsApp()">
 
 <div class="section-title">
 
-<h2>Contact Lee Construction</h2>
+<h2>
+  Contact Lee Construction
+</h2>
 
-<p>Let's discuss your next construction or renovation project.</p>
+<p>
+Let's discuss your next construction or renovation project.
+</p>
 
 </div>
 
@@ -1233,9 +1545,13 @@ onclick="openWhatsApp()">
 
 <div class="icon">📱</div>
 
-<h3>Phone</h3>
+<h3>
+  Phone
+</h3>
 
-<p>068 858 5355</p>
+<p>
+  068 868 5355
+</p>
 
 </div>
 
@@ -1243,17 +1559,23 @@ onclick="openWhatsApp()">
 
 <div class="icon">💬</div>
 
-<h3>WhatsApp</h3>
+<h3>
+  WhatsApp
+</h3>
 
-<p>Chat with Lee Construction directly.</p>
+<p>
+  Chat with Lee Construction directly.
+</p>
 
 <br>
 
 <button
-type="button"
-class="btn btn-primary"
-onclick="openWhatsApp()">
-Open WhatsApp
+  type="button"
+  class="btn btn-primary"
+  onclick="openWhatsApp()">
+
+  Open WhatsApp
+
 </button>
 
 </div>
@@ -1262,116 +1584,140 @@ Open WhatsApp
 
 <div class="icon">💳</div>
 
-<h3>Yoco</h3>
+<h3>
+  Yoco
+</h3>
 
-<p>Secure online payment option.</p>
+<p>
+  Secure online payment option.
+</p>
 
 <br>
 
 <a
-href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
-target="_blank"
-rel="noopener noreferrer"
-class="btn btn-primary">
-Pay With Yoco
+  href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="btn btn-primary">
+
+  Pay With Yoco
+
 </a>
 
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <!-- FOOTER -->
 
 <footer>
 
-<h3>Lee Construction Services</h3>
+<h3>
+  Lee Construction Services
+</h3>
 
 <p>
-Building • Renovations • Paving • Painting • Tiling • Ceilings • Maintenance
+  Building • Renovations • Paving • Painting • Tiling • Ceilings • Maintenance
 </p>
 
 <p style="margin-top:10px;">
-WhatsApp: 068 858 5355
+  WhatsApp: 068 868 5355
 </p>
 
 <p style="margin-top:10px;">
-© 2026 Lee Construction Services. All rights reserved.
+  © 2026 Lee Construction Services. All rights reserved.
 </p>
 
 </footer>
 
-<!-- FIXED WHATSAPP -->
+<!-- FIXED WHATSAPP BUTTON -->
 
 <button
-type="button"
-class="whatsapp"
-onclick="openWhatsApp()"
-aria-label="Open WhatsApp">
+  type="button"
+  class="whatsapp"
+  onclick="openWhatsApp()"
+  aria-label="Open WhatsApp">
 
-<span>💬</span>
+  <span>💬</span>
 
 </button>
 
+
 <script>
 
-/* =========================
-   WHATSAPP SETTINGS
-========================= */
+/* =====================================
+   LEE CONSTRUCTION WHATSAPP
+   CORRECT NUMBER:
+   068 868 5355
+   INTERNATIONAL:
+   +27 68 868 5355
+===================================== */
 
-const WHATSAPP_NUMBER = "27688585355";
+const WHATSAPP_NUMBER = "27688685355";
 
-/*
-  This function opens WhatsApp using
-  the direct WhatsApp URL.
-*/
 
-function openWhatsApp(message = ""){
+/* =====================================
+   OPEN WHATSAPP
+===================================== */
 
-  let url = "https://wa.me/" + WHATSAPP_NUMBER;
+function openWhatsApp(message){
 
-  if(message){
-    url += "?text=" + encodeURIComponent(message);
+  let whatsappURL =
+    "https://wa.me/" + WHATSAPP_NUMBER;
+
+  if(message && message.trim() !== ""){
+
+    whatsappURL +=
+      "?text=" + encodeURIComponent(message);
+
   }
 
   /*
-    Use a new browser tab.
-    This works better on Android browsers
-    than window.location.href.
+    First try opening WhatsApp
+    in a new browser tab.
   */
 
-  const newWindow = window.open(
-    url,
-    "_blank",
-    "noopener,noreferrer"
-  );
+  const whatsappWindow =
+    window.open(
+      whatsappURL,
+      "_blank",
+      "noopener,noreferrer"
+    );
 
   /*
-    Fallback if the browser blocks window.open.
+    Android/browser fallback.
   */
 
-  if(!newWindow){
-    window.location.href = url;
+  if(!whatsappWindow){
+
+    window.location.href = whatsappURL;
+
   }
+
 }
 
 
-/* =========================
+/* =====================================
    MOBILE MENU
-========================= */
+===================================== */
 
 function toggleMenu(){
 
-  document
-    .getElementById("navLinks")
-    .classList
-    .toggle("active");
+  const nav =
+    document.getElementById("navLinks");
+
+  nav.classList.toggle("active");
 
 }
 
 
-/* CLOSE MENU AFTER CLICK */
+/* =====================================
+   CLOSE MENU AFTER CLICK
+===================================== */
 
 document
 .querySelectorAll(".nav-links a")
@@ -1389,9 +1735,9 @@ document
 });
 
 
-/* =========================
-   WHATSAPP QUOTE FORM
-========================= */
+/* =====================================
+   QUOTE FORM
+===================================== */
 
 document
 .getElementById("bookingForm")
@@ -1399,29 +1745,57 @@ document
 
   e.preventDefault();
 
+
   const name =
-    document.getElementById("name").value.trim();
+    document
+    .getElementById("name")
+    .value
+    .trim();
+
 
   const phone =
-    document.getElementById("phone").value.trim();
+    document
+    .getElementById("phone")
+    .value
+    .trim();
+
 
   const service =
-    document.getElementById("service").value;
+    document
+    .getElementById("service")
+    .value;
+
 
   const property =
-    document.getElementById("property").value;
+    document
+    .getElementById("property")
+    .value;
+
 
   const date =
-    document.getElementById("date").value;
+    document
+    .getElementById("date")
+    .value;
+
 
   const time =
-    document.getElementById("time").value;
+    document
+    .getElementById("time")
+    .value;
+
 
   const address =
-    document.getElementById("address").value.trim();
+    document
+    .getElementById("address")
+    .value
+    .trim();
+
 
   const details =
-    document.getElementById("details").value.trim();
+    document
+    .getElementById("details")
+    .value
+    .trim();
 
 
   const message =
@@ -1458,10 +1832,14 @@ Please provide a quotation and advise on the next steps.
 Thank you.`;
 
 
+  /*
+    SEND TO CORRECT WHATSAPP NUMBER:
+    068 868 5355
+  */
+
   openWhatsApp(message);
 
 });
-
 
 </script>
 
