@@ -1,1 +1,1763 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lee Construction Services</title>
+
+<meta name="description" content="Lee Construction Services – building, renovations, paving, plastering, painting, tiling, ceilings and property improvement services. Request a quotation today.">
+
+<meta name="theme-color" content="#0b1f33">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f6f8fa;
+  color:#17212b;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 3px 18px rgba(0,0,0,.09);
+}
+
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#0b1f33;
+  font-size:23px;
+  font-weight:900;
+}
+
+.logo span{
+  display:block;
+  color:#e39b19;
+  font-size:11px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.nav-links{
+  display:flex;
+  gap:22px;
+}
+
+.nav-links a{
+  color:#17212b;
+  font-weight:700;
+}
+
+.nav-links a:hover{
+  color:#e39b19;
+}
+
+.menu{
+  display:none;
+  font-size:29px;
+  cursor:pointer;
+  color:#0b1f33;
+}
+
+/* HERO */
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+
+  background:
+  linear-gradient(
+    rgba(5,20,35,.80),
+    rgba(5,20,35,.80)
+  ),
+  url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
+}
+
+.hero-content{
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+  padding:70px 20px;
+}
+
+.badge{
+  display:inline-block;
+  background:#e39b19;
+  color:#101820;
+  padding:8px 16px;
+  border-radius:5px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:58px;
+  line-height:1.08;
+  max-width:820px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  max-width:700px;
+  font-size:19px;
+  color:#e6edf2;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:6px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn-primary{
+  background:#e39b19;
+  color:#101820;
+}
+
+.btn-primary:hover{
+  transform:translateY(-3px);
+  background:#f2b437;
+}
+
+.btn-white{
+  background:#fff;
+  color:#0b1f33;
+}
+
+.btn-white:hover{
+  transform:translateY(-3px);
+}
+
+/* GENERAL */
+
+section{
+  padding:75px 20px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title h2{
+  font-size:38px;
+  color:#0b1f33;
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:#66727d;
+}
+
+/* SERVICES */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  border:1px solid #e4e9ed;
+  box-shadow:0 8px 28px rgba(10,30,50,.07);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(10,30,50,.12);
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:14px;
+}
+
+.card h3{
+  color:#0b1f33;
+  margin-bottom:10px;
+  font-size:21px;
+}
+
+.card p{
+  color:#66727d;
+}
+
+.price{
+  margin-top:15px;
+  color:#c27c00;
+  font-weight:800;
+}
+
+/* ABOUT */
+
+.about{
+  background:#eef2f5;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about-image{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 12px 35px rgba(0,0,0,.14);
+}
+
+.about h2{
+  font-size:39px;
+  color:#0b1f33;
+  margin-bottom:18px;
+}
+
+.about p{
+  color:#596772;
+  margin-bottom:15px;
+}
+
+.about-list{
+  list-style:none;
+  margin-top:20px;
+}
+
+.about-list li{
+  margin-bottom:13px;
+  font-weight:700;
+}
+
+.about-list li::before{
+  content:"✓";
+  color:#e39b19;
+  font-weight:900;
+  margin-right:10px;
+}
+
+/* CONSTRUCTION TYPES */
+
+.types{
+  background:#0b1f33;
+  color:#fff;
+}
+
+.types .section-title h2{
+  color:#fff;
+}
+
+.types .section-title p{
+  color:#cbd5dc;
+}
+
+.type-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.type-box{
+  padding:30px 20px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;
+  background:rgba(255,255,255,.05);
+}
+
+.type-box .icon{
+  font-size:35px;
+}
+
+.type-box h3{
+  margin-bottom:8px;
+}
+
+.type-box p{
+  color:#cbd5dc;
+  font-size:14px;
+}
+
+/* PROJECTS */
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.project{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.project img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+.project-content{
+  padding:22px;
+}
+
+.project-content h3{
+  color:#0b1f33;
+  margin-bottom:7px;
+}
+
+.project-content p{
+  color:#66727d;
+}
+
+/* PROCESS */
+
+.process{
+  background:#f0f3f5;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.step{
+  background:#fff;
+  padding:28px 20px;
+  border-radius:10px;
+  text-align:center;
+  border:1px solid #e0e5e9;
+}
+
+.step-number{
+  width:55px;
+  height:55px;
+  background:#e39b19;
+  color:#101820;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 15px;
+  font-size:20px;
+  font-weight:900;
+}
+
+.step h3{
+  color:#0b1f33;
+  margin-bottom:7px;
+}
+
+.step p{
+  color:#687681;
+  font-size:14px;
+}
+
+/* PRICES */
+
+.price-section{
+  background:#fff;
+}
+
+.price-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.price-card{
+  padding:32px;
+  border-radius:12px;
+  border:1px solid #dfe5e9;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.price-card h3{
+  color:#0b1f33;
+  margin-bottom:15px;
+}
+
+.amount{
+  color:#c27c00;
+  font-size:25px;
+  font-weight:900;
+  margin-bottom:15px;
+}
+
+.price-card p{
+  color:#66727d;
+}
+
+/* BOOKING */
+
+.booking{
+  background:#eef2f5;
+}
+
+.form-box{
+  max-width:900px;
+  margin:auto;
+  background:#fff;
+  padding:35px;
+  border-radius:14px;
+  box-shadow:0 12px 35px rgba(0,0,0,.09);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-weight:800;
+  color:#0b1f33;
+  margin-bottom:7px;
+}
+
+input,
+select,
+textarea{
+  padding:13px;
+  border:1px solid #ccd5db;
+  border-radius:6px;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#e39b19;
+}
+
+textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+.submit-btn{
+  width:100%;
+  border:0;
+  cursor:pointer;
+  margin-top:20px;
+  font-size:16px;
+}
+
+/* PAYMENT */
+
+.payment{
+  background:#fff;
+}
+
+.payment-box{
+  max-width:850px;
+  margin:auto;
+  background:#0b1f33;
+  color:#fff;
+  text-align:center;
+  padding:45px 25px;
+  border-radius:14px;
+}
+
+.payment-box h2{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.payment-box p{
+  color:#ccd7df;
+  margin-bottom:25px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.contact-card{
+  background:#fff;
+  padding:30px;
+  text-align:center;
+  border-radius:12px;
+  border:1px solid #e0e6ea;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.contact-card .icon{
+  font-size:36px;
+}
+
+.contact-card h3{
+  color:#0b1f33;
+  margin-bottom:8px;
+}
+
+.contact-card p{
+  color:#66727d;
+}
+
+/* CTA */
+
+.cta{
+  background:
+  linear-gradient(
+    rgba(8,28,45,.94),
+    rgba(8,28,45,.94)
+  ),
+  url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80")
+  center/cover;
+  color:#fff;
+  text-align:center;
+}
+
+.cta h2{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.cta p{
+  color:#d4dce2;
+  max-width:650px;
+  margin:0 auto 25px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#061522;
+  color:#fff;
+  text-align:center;
+  padding:32px 20px;
+}
+
+footer h3{
+  margin-bottom:8px;
+}
+
+footer p{
+  color:#aebbc4;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  z-index:2000;
+  box-shadow:0 6px 25px rgba(0,0,0,.25);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    background:#fff;
+    flex-direction:column;
+    padding:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .hero h1{
+    font-size:44px;
+  }
+
+  .services-grid,
+  .price-grid,
+  .contact-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .type-grid,
+  .process-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .projects{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:600px){
+
+  section{
+    padding:55px 15px;
+  }
+
+  .hero{
+    min-height:590px;
+  }
+
+  .hero h1{
+    font-size:35px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section-title h2{
+    font-size:30px;
+  }
+
+  .services-grid,
+  .price-grid,
+  .contact-grid,
+  .type-grid,
+  .process-grid,
+  .projects,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-group.full{
+    grid-column:auto;
+  }
+
+  .form-box{
+    padding:22px;
+  }
+
+  .about h2{
+    font-size:30px;
+  }
+
+  .cta h2{
+    font-size:30px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="navbar">
+
+  <div class="logo">
+    Lee Construction
+    <span>Building • Renovations • Property Improvement</span>
+  </div>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#prices">Prices</a>
+    <a href="#booking">Get Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+  <span class="badge">CONSTRUCTION & PROPERTY SERVICES</span>
+
+  <h1>
+    Build Better. Renovate With Confidence.
+  </h1>
+
+  <p>
+    Lee Construction Services provides building, renovation,
+    maintenance and property improvement solutions for homes,
+    businesses and other properties.
+  </p>
+
+  <div class="buttons">
+
+    <a href="#booking" class="btn btn-primary">
+      Request A Quote
+    </a>
+
+    <a
+      href="https://wa.me/message/27688585355"
+      target="_blank"
+      class="btn btn-white">
+      WhatsApp Us
+    </a>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>Our Construction Services</h2>
+
+  <p>
+    Practical construction and property improvement services.
+  </p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="card">
+
+  <div class="icon">🏗️</div>
+
+  <h3>General Building</h3>
+
+  <p>
+    General building work and property improvement projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🏠</div>
+
+  <h3>Home Renovations</h3>
+
+  <p>
+    Renovation projects for rooms, homes and selected property areas.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🧱</div>
+
+  <h3>Brickwork & Blockwork</h3>
+
+  <p>
+    Brickwork, blockwork and selected construction projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🎨</div>
+
+  <h3>Painting</h3>
+
+  <p>
+    Interior and exterior painting for residential and selected
+    commercial properties.
+  </p>
+
+  <div class="price">
+    From R500
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🧱</div>
+
+  <h3>Plastering</h3>
+
+  <p>
+    Wall plastering and surface preparation enquiries.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🔲</div>
+
+  <h3>Tiling</h3>
+
+  <p>
+    Floor, wall, kitchen and bathroom tiling services.
+  </p>
+
+  <div class="price">
+    From R250/m²
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">⬜</div>
+
+  <h3>Ceilings</h3>
+
+  <p>
+    Ceiling installation, repairs and selected ceiling projects.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🪨</div>
+
+  <h3>Paving</h3>
+
+  <p>
+    Paving, pathways and selected outdoor construction projects.
+  </p>
+
+  <div class="price">
+    From R250/m²
+  </div>
+
+</div>
+
+
+<div class="card">
+
+  <div class="icon">🔨</div>
+
+  <h3>Property Maintenance</h3>
+
+  <p>
+    General repairs, maintenance and improvement enquiries.
+  </p>
+
+  <div class="price">
+    Quote Required
+  </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div>
+
+  <h2>Construction That Starts With A Clear Quote</h2>
+
+  <p>
+    Every construction project is different. The size of the property,
+    materials, access and scope of work can all affect the final price.
+  </p>
+
+  <p>
+    Tell us what you want to build, repair or renovate and provide
+    as much information as possible so the project can be discussed
+    and quoted appropriately.
+  </p>
+
+  <ul class="about-list">
+
+    <li>Residential construction</li>
+    <li>Renovation projects</li>
+    <li>Property maintenance</li>
+    <li>Interior & exterior improvements</li>
+    <li>WhatsApp quotation requests</li>
+    <li>Project-focused service</li>
+
+  </ul>
+
+</div>
+
+
+<img
+  class="about-image"
+  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+  alt="Construction workers on a building project">
+
+</div>
+
+</section>
+
+
+<!-- PROPERTY TYPES -->
+
+<section class="types">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>Projects We Can Discuss</h2>
+
+  <p>
+    Construction and improvement enquiries for different property types.
+  </p>
+
+</div>
+
+
+<div class="type-grid">
+
+
+<div class="type-box">
+
+  <div class="icon">🏠</div>
+
+  <h3>Homes</h3>
+
+  <p>
+    Building, renovation and maintenance enquiries.
+  </p>
+
+</div>
+
+
+<div class="type-box">
+
+  <div class="icon">🏢</div>
+
+  <h3>Offices</h3>
+
+  <p>
+    Selected commercial property improvements.
+  </p>
+
+</div>
+
+
+<div class="type-box">
+
+  <div class="icon">🏪</div>
+
+  <h3>Businesses</h3>
+
+  <p>
+    Property repairs, upgrades and renovation projects.
+  </p>
+
+</div>
+
+
+<div class="type-box">
+
+  <div class="icon">🏗️</div>
+
+  <h3>Construction Sites</h3>
+
+  <p>
+    Discuss your project requirements and scope of work.
+  </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>Construction Projects</h2>
+
+  <p>
+    Examples of the type of work customers can enquire about.
+  </p>
+
+</div>
+
+
+<div class="projects">
+
+
+<div class="project">
+
+  <img
+    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
+    alt="Building construction">
+
+  <div class="project-content">
+
+    <h3>Building Projects</h3>
+
+    <p>
+      General building and property improvement enquiries.
+    </p>
+
+  </div>
+
+</div>
+
+
+<div class="project">
+
+  <img
+    src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80"
+    alt="House renovation">
+
+  <div class="project-content">
+
+    <h3>Renovations</h3>
+
+    <p>
+      Upgrade selected rooms and areas of your property.
+    </p>
+
+  </div>
+
+</div>
+
+
+<div class="project">
+
+  <img
+    src="https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=80"
+    alt="Construction materials">
+
+  <div class="project-content">
+
+    <h3>Property Improvements</h3>
+
+    <p>
+      Discuss repairs, finishes and other improvement projects.
+    </p>
+
+  </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>How It Works</h2>
+
+  <p>
+    A simple way to start your construction project.
+  </p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="step">
+
+  <div class="step-number">1</div>
+
+  <h3>Tell Us</h3>
+
+  <p>
+    Tell us what you want to build, repair or renovate.
+  </p>
+
+</div>
+
+
+<div class="step">
+
+  <div class="step-number">2</div>
+
+  <h3>Send Details</h3>
+
+  <p>
+    Provide photos, measurements, location and project details.
+  </p>
+
+</div>
+
+
+<div class="step">
+
+  <div class="step-number">3</div>
+
+  <h3>Get A Quote</h3>
+
+  <p>
+    Discuss the work and receive a quotation based on the project.
+  </p>
+
+</div>
+
+
+<div class="step">
+
+  <div class="step-number">4</div>
+
+  <h3>Start The Project</h3>
+
+  <p>
+    Arrange the work and project schedule.
+  </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRICES -->
+
+<section class="price-section" id="prices">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>Starting Price Guide</h2>
+
+  <p>
+    Final pricing depends on materials, measurements, access and project scope.
+  </p>
+
+</div>
+
+
+<div class="price-grid">
+
+
+<div class="price-card">
+
+  <h3>Painting</h3>
+
+  <div class="amount">
+    From R500
+  </div>
+
+  <p>
+    Final price depends on the area, preparation and paint requirements.
+  </p>
+
+</div>
+
+
+<div class="price-card">
+
+  <h3>Tiling</h3>
+
+  <div class="amount">
+    From R250/m²
+  </div>
+
+  <p>
+    Final quotation depends on the tile type, preparation and project.
+  </p>
+
+</div>
+
+
+<div class="price-card">
+
+  <h3>Construction</h3>
+
+  <div class="amount">
+    Quote Required
+  </div>
+
+  <p>
+    Construction projects are quoted according to the complete scope.
+  </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BOOKING -->
+
+<section class="booking" id="booking">
+
+<div class="container">
+
+<div class="section-title">
+
+  <h2>Request A Construction Quote</h2>
+
+  <p>
+    Complete the form and send your project details directly to WhatsApp.
+  </p>
+
+</div>
+
+
+<div class="form-box">
+
+<form id="bookingForm">
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label>Your Name</label>
+
+<input
+  type="text"
+  id="name"
+  required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+  type="tel"
+  id="phone"
+  required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Service</label>
+
+<select id="service" required>
+
+<option value="">Select service</option>
+
+<option>General Building</option>
+<option>Home Renovation</option>
+<option>Brickwork & Blockwork</option>
+<option>Painting</option>
+<option>Plastering</option>
+<option>Tiling</option>
+<option>Ceilings</option>
+<option>Paving</option>
+<option>Property Maintenance</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Property Type</label>
+
+<select id="property" required>
+
+<option value="">Select property</option>
+
+<option>House</option>
+<option>Apartment</option>
+<option>Office</option>
+<option>Business</option>
+<option>Estate</option>
+<option>Construction Site</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Preferred Date</label>
+
+<input
+  type="date"
+  id="date">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Preferred Time</label>
+
+<input
+  type="time"
+  id="time">
+
+</div>
+
+
+<div class="form-group full">
+
+<label>Property Address / Area</label>
+
+<input
+  type="text"
+  id="address"
+  required>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>Project Details</label>
+
+<textarea
+  id="details"
+  placeholder="Tell us what you want built, repaired or renovated. Include approximate measurements if you know them."
+  required></textarea>
+
+</div>
+
+
+</div>
+
+
+<button
+  type="submit"
+  class="btn btn-primary submit-btn">
+
+  Send Quote Request On WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<section class="payment">
+
+<div class="container">
+
+<div class="payment-box">
+
+<h2>Pay With Yoco</h2>
+
+<p>
+Once your quotation and payment arrangement have been agreed,
+you can use the Yoco payment option below.
+</p>
+
+<a
+  href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+  target="_blank"
+  class="btn btn-primary">
+
+  Pay With Yoco
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Ready To Start Your Project?</h2>
+
+<p>
+Whether it is a renovation, paving project, painting job or general
+construction enquiry, contact Lee Construction Services to discuss
+your requirements.
+</p>
+
+<a
+  href="#booking"
+  class="btn btn-primary">
+
+  Get A Construction Quote
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Contact Lee Construction</h2>
+
+<p>
+Let's discuss your next construction or renovation project.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<div class="icon">📱</div>
+
+<h3>Phone</h3>
+
+<p>
+068 858 5355
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">💬</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+Send us your project details.
+</p>
+
+<br>
+
+<a
+  href="https://wa.me/message/27688585355"
+  target="_blank"
+  class="btn btn-primary">
+
+  WhatsApp Us
+
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">💳</div>
+
+<h3>Yoco</h3>
+
+<p>
+Secure online payment option.
+</p>
+
+<br>
+
+<a
+  href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+  target="_blank"
+  class="btn btn-primary">
+
+  Pay With Yoco
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Lee Construction Services</h3>
+
+<p>
+Building • Renovations • Paving • Painting • Tiling • Ceilings • Maintenance
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Lee Construction Services. All rights reserved.
+</p>
+
+</footer>
+
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/27688585355"
+  target="_blank"
+  aria-label="WhatsApp">
+
+  ☎
+
+</a>
+
+
+<script>
+
+function toggleMenu(){
+
+  document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+
+}
+
+
+document
+  .querySelectorAll(".nav-links a")
+  .forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+      document
+        .getElementById("navLinks")
+        .classList
+        .remove("active");
+
+    });
+
+  });
+
+
+document
+  .getElementById("bookingForm")
+  .addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+
+    const name =
+      document.getElementById("name").value.trim();
+
+    const phone =
+      document.getElementById("phone").value.trim();
+
+    const service =
+      document.getElementById("service").value;
+
+    const property =
+      document.getElementById("property").value;
+
+    const date =
+      document.getElementById("date").value;
+
+    const time =
+      document.getElementById("time").value;
+
+    const address =
+      document.getElementById("address").value.trim();
+
+    const details =
+      document.getElementById("details").value.trim();
+
+
+    const message =
+`🏗️ LEE CONSTRUCTION SERVICES
+
+NEW CONSTRUCTION QUOTE REQUEST
+
+👤 Name: ${name}
+📱 Phone: ${phone}
+
+🔨 Service: ${service}
+🏠 Property: ${property}
+
+📅 Preferred Date: ${date || "Not specified"}
+⏰ Preferred Time: ${time || "Not specified"}
+
+📍 Property Address / Area:
+${address}
+
+📝 Project Details:
+${details}
+
+Please provide a quotation and advise on the next steps.
+
+Thank you.`;
+
+
+    const whatsappURL =
+      "https://wa.me/27688585355?text=" +
+      encodeURIComponent(message);
+
+
+    window.open(whatsappURL,"_blank");
+
+  });
+
+</script>
+
+</body>
+</html>
