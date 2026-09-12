@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
 
 <title>Lee Construction Services</title>
 
-<meta name="description" content="Lee Construction Services – building, renovations, paving, plastering, painting, tiling, ceilings and property improvement services. Request a quotation today.">
+<meta name="description" content="Lee Construction Services - Building, renovations, paving, painting, tiling, ceilings and property maintenance.">
 
 <meta name="theme-color" content="#0b1f33">
 
@@ -93,8 +92,8 @@ header{
 
   background:
   linear-gradient(
-    rgba(5,20,35,.80),
-    rgba(5,20,35,.80)
+    rgba(5,20,35,.82),
+    rgba(5,20,35,.82)
   ),
   url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
   center/cover;
@@ -143,6 +142,7 @@ header{
   border-radius:6px;
   font-weight:800;
   transition:.25s;
+  cursor:pointer;
 }
 
 .btn-primary{
@@ -280,7 +280,7 @@ section{
   margin-right:10px;
 }
 
-/* CONSTRUCTION TYPES */
+/* PROPERTY TYPES */
 
 .types{
   background:#0b1f33;
@@ -480,6 +480,7 @@ textarea{
   border-radius:6px;
   font-size:15px;
   outline:none;
+  font-family:inherit;
 }
 
 input:focus,
@@ -496,7 +497,6 @@ textarea{
 .submit-btn{
   width:100%;
   border:0;
-  cursor:pointer;
   margin-top:20px;
   font-size:16px;
 }
@@ -525,6 +525,31 @@ textarea{
 .payment-box p{
   color:#ccd7df;
   margin-bottom:25px;
+}
+
+/* CTA */
+
+.cta{
+  background:
+  linear-gradient(
+    rgba(8,28,45,.94),
+    rgba(8,28,45,.94)
+  ),
+  url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80")
+  center/cover;
+  color:#fff;
+  text-align:center;
+}
+
+.cta h2{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.cta p{
+  color:#d4dce2;
+  max-width:650px;
+  margin:0 auto 25px;
 }
 
 /* CONTACT */
@@ -557,31 +582,6 @@ textarea{
   color:#66727d;
 }
 
-/* CTA */
-
-.cta{
-  background:
-  linear-gradient(
-    rgba(8,28,45,.94),
-    rgba(8,28,45,.94)
-  ),
-  url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80")
-  center/cover;
-  color:#fff;
-  text-align:center;
-}
-
-.cta h2{
-  font-size:40px;
-  margin-bottom:12px;
-}
-
-.cta p{
-  color:#d4dce2;
-  max-width:650px;
-  margin:0 auto 25px;
-}
-
 /* FOOTER */
 
 footer{
@@ -599,23 +599,33 @@ footer p{
   color:#aebbc4;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 
 .whatsapp{
   position:fixed;
   right:20px;
   bottom:20px;
-  width:60px;
-  height:60px;
+  width:62px;
+  height:62px;
   border-radius:50%;
   background:#25D366;
   color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:28px;
-  z-index:2000;
-  box-shadow:0 6px 25px rgba(0,0,0,.25);
+  font-size:31px;
+  z-index:99999;
+  box-shadow:0 6px 25px rgba(0,0,0,.28);
+  cursor:pointer;
+  transition:.2s;
+}
+
+.whatsapp:hover{
+  transform:scale(1.1);
+}
+
+.whatsapp span{
+  line-height:1;
 }
 
 /* MOBILE */
@@ -722,6 +732,7 @@ footer p{
 
 <body>
 
+
 <!-- HEADER -->
 
 <header>
@@ -736,6 +747,7 @@ footer p{
   <div class="menu" onclick="toggleMenu()">☰</div>
 
   <nav class="nav-links" id="navLinks">
+
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -743,6 +755,7 @@ footer p{
     <a href="#prices">Prices</a>
     <a href="#booking">Get Quote</a>
     <a href="#contact">Contact</a>
+
   </nav>
 
 </div>
@@ -756,7 +769,9 @@ footer p{
 
 <div class="hero-content">
 
-  <span class="badge">CONSTRUCTION & PROPERTY SERVICES</span>
+  <span class="badge">
+    CONSTRUCTION & PROPERTY SERVICES
+  </span>
 
   <h1>
     Build Better. Renovate With Confidence.
@@ -774,11 +789,16 @@ footer p{
       Request A Quote
     </a>
 
+    <!-- DIRECT WHATSAPP -->
+
     <a
-      href="https://wa.me/message/27688585355"
+      href="https://wa.me/27688585355"
       target="_blank"
+      rel="noopener noreferrer"
       class="btn btn-white">
-      WhatsApp Us
+
+      💬 WhatsApp Us
+
     </a>
 
   </div>
@@ -977,7 +997,9 @@ footer p{
 
 <div>
 
-  <h2>Construction That Starts With A Clear Quote</h2>
+  <h2>
+    Construction That Starts With A Clear Quote
+  </h2>
 
   <p>
     Every construction project is different. The size of the property,
@@ -1359,6 +1381,7 @@ footer p{
 <input
   type="text"
   id="name"
+  placeholder="Enter your name"
   required>
 
 </div>
@@ -1371,6 +1394,7 @@ footer p{
 <input
   type="tel"
   id="phone"
+  placeholder="Enter your phone number"
   required>
 
 </div>
@@ -1450,6 +1474,7 @@ footer p{
 <input
   type="text"
   id="address"
+  placeholder="Enter your property address or area"
   required>
 
 </div>
@@ -1474,7 +1499,7 @@ footer p{
   type="submit"
   class="btn btn-primary submit-btn">
 
-  Send Quote Request On WhatsApp
+  💬 Send Quote Request On WhatsApp
 
 </button>
 
@@ -1495,7 +1520,9 @@ footer p{
 
 <div class="payment-box">
 
-<h2>Pay With Yoco</h2>
+<h2>
+  💳 Pay With Yoco
+</h2>
 
 <p>
 Once your quotation and payment arrangement have been agreed,
@@ -1505,6 +1532,7 @@ you can use the Yoco payment option below.
 <a
   href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
   target="_blank"
+  rel="noopener noreferrer"
   class="btn btn-primary">
 
   Pay With Yoco
@@ -1524,7 +1552,9 @@ you can use the Yoco payment option below.
 
 <div class="container">
 
-<h2>Ready To Start Your Project?</h2>
+<h2>
+  Ready To Start Your Project?
+</h2>
 
 <p>
 Whether it is a renovation, paving project, painting job or general
@@ -1533,10 +1563,12 @@ your requirements.
 </p>
 
 <a
-  href="#booking"
+  href="https://wa.me/27688585355"
+  target="_blank"
+  rel="noopener noreferrer"
   class="btn btn-primary">
 
-  Get A Construction Quote
+  💬 WhatsApp Lee Construction
 
 </a>
 
@@ -1553,7 +1585,9 @@ your requirements.
 
 <div class="section-title">
 
-<h2>Contact Lee Construction</h2>
+<h2>
+  Contact Lee Construction
+</h2>
 
 <p>
 Let's discuss your next construction or renovation project.
@@ -1569,10 +1603,12 @@ Let's discuss your next construction or renovation project.
 
 <div class="icon">📱</div>
 
-<h3>Phone</h3>
+<h3>
+  Phone
+</h3>
 
 <p>
-068 858 5355
+  068 858 5355
 </p>
 
 </div>
@@ -1582,20 +1618,23 @@ Let's discuss your next construction or renovation project.
 
 <div class="icon">💬</div>
 
-<h3>WhatsApp</h3>
+<h3>
+  WhatsApp
+</h3>
 
 <p>
-Send us your project details.
+  Chat with Lee Construction directly.
 </p>
 
 <br>
 
 <a
-  href="https://wa.me/message/27688585355"
+  href="https://wa.me/27688585355"
   target="_blank"
+  rel="noopener noreferrer"
   class="btn btn-primary">
 
-  WhatsApp Us
+  Open WhatsApp
 
 </a>
 
@@ -1606,10 +1645,12 @@ Send us your project details.
 
 <div class="icon">💳</div>
 
-<h3>Yoco</h3>
+<h3>
+  Yoco
+</h3>
 
 <p>
-Secure online payment option.
+  Secure online payment option.
 </p>
 
 <br>
@@ -1617,6 +1658,7 @@ Secure online payment option.
 <a
   href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
   target="_blank"
+  rel="noopener noreferrer"
   class="btn btn-primary">
 
   Pay With Yoco
@@ -1637,33 +1679,42 @@ Secure online payment option.
 
 <footer>
 
-<h3>Lee Construction Services</h3>
+<h3>
+  Lee Construction Services
+</h3>
 
 <p>
-Building • Renovations • Paving • Painting • Tiling • Ceilings • Maintenance
+  Building • Renovations • Paving • Painting • Tiling • Ceilings • Maintenance
 </p>
 
 <p style="margin-top:10px;">
-© 2026 Lee Construction Services. All rights reserved.
+  WhatsApp: 068 858 5355
+</p>
+
+<p style="margin-top:10px;">
+  © 2026 Lee Construction Services. All rights reserved.
 </p>
 
 </footer>
 
 
-<!-- WHATSAPP FLOATING BUTTON -->
+<!-- FIXED WHATSAPP -->
 
 <a
   class="whatsapp"
   href="https://wa.me/27688585355"
   target="_blank"
-  aria-label="WhatsApp">
+  rel="noopener noreferrer"
+  aria-label="Chat with Lee Construction on WhatsApp">
 
-  ☎
+  <span>💬</span>
 
 </a>
 
 
 <script>
+
+/* MOBILE MENU */
 
 function toggleMenu(){
 
@@ -1674,6 +1725,8 @@ function toggleMenu(){
 
 }
 
+
+/* CLOSE MOBILE MENU AFTER CLICK */
 
 document
   .querySelectorAll(".nav-links a")
@@ -1691,6 +1744,8 @@ document
   });
 
 
+/* WHATSAPP QUOTE FORM */
+
 document
   .getElementById("bookingForm")
   .addEventListener("submit",function(e){
@@ -1699,28 +1754,55 @@ document
 
 
     const name =
-      document.getElementById("name").value.trim();
+      document
+      .getElementById("name")
+      .value
+      .trim();
+
 
     const phone =
-      document.getElementById("phone").value.trim();
+      document
+      .getElementById("phone")
+      .value
+      .trim();
+
 
     const service =
-      document.getElementById("service").value;
+      document
+      .getElementById("service")
+      .value;
+
 
     const property =
-      document.getElementById("property").value;
+      document
+      .getElementById("property")
+      .value;
+
 
     const date =
-      document.getElementById("date").value;
+      document
+      .getElementById("date")
+      .value;
+
 
     const time =
-      document.getElementById("time").value;
+      document
+      .getElementById("time")
+      .value;
+
 
     const address =
-      document.getElementById("address").value.trim();
+      document
+      .getElementById("address")
+      .value
+      .trim();
+
 
     const details =
-      document.getElementById("details").value.trim();
+      document
+      .getElementById("details")
+      .value
+      .trim();
 
 
     const message =
@@ -1729,13 +1811,21 @@ document
 NEW CONSTRUCTION QUOTE REQUEST
 
 👤 Name: ${name}
-📱 Phone: ${phone}
 
-🔨 Service: ${service}
-🏠 Property: ${property}
+📱 Customer Phone:
+${phone}
 
-📅 Preferred Date: ${date || "Not specified"}
-⏰ Preferred Time: ${time || "Not specified"}
+🔨 Service:
+${service}
+
+🏠 Property Type:
+${property}
+
+📅 Preferred Date:
+${date || "Not specified"}
+
+⏰ Preferred Time:
+${time || "Not specified"}
 
 📍 Property Address / Area:
 ${address}
@@ -1753,7 +1843,9 @@ Thank you.`;
       encodeURIComponent(message);
 
 
-    window.open(whatsappURL,"_blank");
+    /* OPEN DIRECT WHATSAPP */
+
+    window.location.href = whatsappURL;
 
   });
 
